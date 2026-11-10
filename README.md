@@ -1,2 +1,386 @@
 # mahadi-foundation
 Official website of Mahadi Foundation – Humanity First, Standing Beside People.
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="মাহাদী ফাউন্ডেশন - মানবতার কল্যাণে, মানুষের পাশে।">
+<meta name="author" content="Mahadi Foundation">
+<meta name="theme-color" content="#075c39">
+<title>মাহাদী ফাউন্ডেশন | Mahadi Foundation</title>
+
+<style>
+:root {
+  --green: #075c39;
+  --dark: #043d28;
+  --gold: #d4af37;
+  --light: #f3f8f4;
+  --white: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, "Noto Sans Bengali", sans-serif;
+  background: var(--light);
+  color: #26352c;
+  line-height: 1.8;
+}
+header {
+  background: linear-gradient(135deg,#075c39,#087b4b);
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+.logo {
+  width: 75px;
+  height: 75px;
+  border: 3px solid var(--gold);
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  display: grid;
+  place-items: center;
+  font-size: 27px;
+  font-weight: bold;
+  color: var(--gold);
+}
+header h1 {font-size: 30px;}
+header p {font-size: 16px;}
+.tagline {color: #ffe49a; margin-top: 8px;}
+
+nav {
+  background: var(--dark);
+  padding: 12px 8px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 7px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+nav a:hover {background: #16784e;color: #ffe49a;}
+
+.hero {
+  text-align: center;
+  padding: 75px 18px;
+  background: linear-gradient(135deg,#e1f4e7,#fff,#fff5d9);
+}
+.hero h2 {
+  color: var(--green);
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+.hero p {max-width: 650px;margin: auto;}
+.btn {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  padding: 11px 22px;
+  border-radius: 7px;
+  text-decoration: none;
+  margin: 12px 5px 0;
+  font-weight: bold;
+}
+.btn:hover {background: var(--dark);}
+.btn.gold {background: var(--gold);color: #173a27;}
+
+section {
+  max-width: 1050px;
+  margin: auto;
+  padding: 48px 18px;
+}
+.section-title {
+  text-align: center;
+  color: var(--green);
+  margin-bottom: 25px;
+  font-size: 27px;
+}
+.section-title:after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 3px;
+  background: var(--gold);
+  margin: 8px auto;
+}
+.intro {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 15px #0000000b;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 18px;
+}
+.card {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  border-bottom: 3px solid var(--gold);
+  box-shadow: 0 3px 14px #0000000d;
+  text-align: center;
+}
+.card .symbol {font-size: 34px;}
+.card h3 {color: var(--green);margin: 8px 0;}
+.card p {font-size: 14px;}
+.notice {
+  background: #fff8df;
+  border-left: 4px solid var(--gold);
+  padding: 15px;
+  border-radius: 7px;
+  margin-top: 18px;
+}
+.shop-box {
+  background: linear-gradient(120deg,#075c39,#087b4b);
+  color: white;
+  border: 2px solid var(--gold);
+  border-radius: 15px;
+  padding: 30px 18px;
+  text-align: center;
+}
+.shop-box h2 {color: #ffe49a;}
+footer {
+  background: var(--dark);
+  color: white;
+  padding: 30px 15px;
+  text-align: center;
+}
+footer a {color: #ffe49a;text-decoration: none;}
+.footer-small {font-size: 13px;color: #c9ded1;margin-top: 12px;}
+.top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background: var(--gold);
+  color: var(--dark);
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 99;
+}
+@media(max-width:600px) {
+  header h1 {font-size: 25px;}
+  .hero {padding: 50px 15px;}
+  .hero h2 {font-size: 25px;}
+  nav {position: relative;}
+  nav a {font-size: 13px;padding: 6px;}
+  section {padding: 35px 15px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">MF</div>
+  <h1>মাহাদী ফাউন্ডেশন</h1>
+  <p>MAHADI FOUNDATION</p>
+  <p class="tagline">মানবতার কল্যাণে, মানুষের পাশে।</p>
+</header>
+
+<nav>
+  <a href="#home">হোম</a>
+  <a href="#about">পরিচিতি</a>
+  <a href="#activities">কার্যক্রম</a>
+  <a href="#member">সদস্য</a>
+  <a href="#donation">অনুদান</a>
+  <a href="#help">সাহায্য</a>
+  <a href="#projects">প্রকল্প</a>
+  <a href="#eiss">EISS</a>
+  <a href="#ai">AI</a>
+  <a href="#contact">যোগাযোগ</a>
+</nav>
+
+<div class="hero" id="home">
+  <h2>স্বাগতম মাহাদী ফাউন্ডেশনে</h2>
+  <p>
+    মানবসেবা, শিক্ষা, স্বাস্থ্য এবং সামাজিক উন্নয়নে
+    একটি সুন্দর ও মানবিক সমাজ গড়ার প্রত্যয়ে আমাদের যাত্রা।
+  </p>
+  <a class="btn" href="#about">আমাদের সম্পর্কে</a>
+  <a class="btn gold" href="#member">সদস্য হন</a>
+</div>
+
+<section id="about">
+  <h2 class="section-title">আমাদের সম্পর্কে</h2>
+  <div class="intro">
+    <p>
+      মাহাদী ফাউন্ডেশন একটি মানবকল্যাণমূলক উদ্যোগ।
+      সমাজের অসহায়, দরিদ্র ও সুবিধাবঞ্চিত মানুষের পাশে দাঁড়ানো,
+      শিক্ষা ও স্বাস্থ্য সচেতনতা বৃদ্ধি এবং সামাজিক উন্নয়নে
+      ভূমিকা রাখাই আমাদের লক্ষ্য।
+    </p>
+    <p><strong>আমাদের মূলমন্ত্র:</strong>
+      মানবতার কল্যাণে, মানুষের পাশে।
+    </p>
+  </div>
+</section>
+
+<section id="activities">
+  <h2 class="section-title">আমাদের কার্যক্রম</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="symbol">🤝</div>
+      <h3>মানবসেবা</h3>
+      <p>অসহায় ও দরিদ্র মানুষের পাশে দাঁড়ানো।</p>
+    </div>
+    <div class="card">
+      <div class="symbol">📚</div>
+      <h3>শিক্ষা সহায়তা</h3>
+      <p>সুবিধাবঞ্চিত শিক্ষার্থীদের শিক্ষা সহায়তা।</p>
+    </div>
+    <div class="card">
+      <div class="symbol">🏥</div>
+      <h3>স্বাস্থ্যসেবা</h3>
+      <p>স্বাস্থ্য সচেতনতা ও মানবিক সহযোগিতা।</p>
+    </div>
+    <div class="card">
+      <div class="symbol">🌱</div>
+      <h3>সামাজিক উন্নয়ন</h3>
+      <p>সুন্দর ও মানবিক সমাজ গঠনে উদ্যোগ।</p>
+    </div>
+  </div>
+</section>
+
+<section id="member">
+  <h2 class="section-title">সদস্য নিবন্ধন</h2>
+  <div class="intro">
+    <p>
+      মাহাদী ফাউন্ডেশনের মানবকল্যাণমূলক উদ্যোগে
+      অংশ নিতে আগ্রহী ব্যক্তিদের স্বাগতম।
+    </p>
+    <p class="notice">
+      অনলাইন সদস্য আবেদন গ্রহণের ব্যবস্থা এখনো চালু হয়নি।
+      চালু হলে এখানে আবেদন করা যাবে।
+    </p>
+  </div>
+</section>
+
+<section id="donation">
+  <h2 class="section-title">অনুদান</h2>
+  <div class="intro">
+    <p>
+      মানুষের কল্যাণে স্বেচ্ছায় সহযোগিতা করতে আগ্রহীদের
+      জন্য অনুদান কার্যক্রমের পরিকল্পনা রয়েছে।
+    </p>
+    <p class="notice">
+      অনুদান গ্রহণের আনুষ্ঠানিক ব্যবস্থা ও হিসাব প্রকাশের
+      পদ্ধতি চালু হওয়ার পর বিস্তারিত জানানো হবে।
+    </p>
+  </div>
+</section>
+
+<section id="help">
+  <h2 class="section-title">সাহায্যের আবেদন</h2>
+  <div class="intro">
+    <p>
+      অসহায় ও সুবিধাবঞ্চিত মানুষের পাশে দাঁড়ানো
+      আমাদের অন্যতম লক্ষ্য।
+    </p>
+    <p class="notice">
+      অনলাইন সাহায্যের আবেদন ব্যবস্থা প্রস্তুত করা হচ্ছে।
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">আমাদের প্রকল্প</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="symbol">💚</div>
+      <h3>মাহাদী ফাউন্ডেশন</h3>
+      <p>মানবকল্যাণ ও সামাজিক উন্নয়ন।</p>
+    </div>
+    <div class="card">
+      <div class="symbol">📖</div>
+      <h3>মাহাদী হাদিস</h3>
+      <p>ইসলামিক জ্ঞান ও নির্ভরযোগ্য হাদিস প্রচার।</p>
+    </div>
+    <div class="card">
+      <div class="symbol">🛍️</div>
+      <h3>মাহাদী শপ</h3>
+      <p>অনলাইন পণ্য ও সেবা কার্যক্রম।</p>
+      <a class="btn" href="https://shop-oty0ld.zatiq.app" target="_blank" rel="noopener">শপে প্রবেশ</a>
+    </div>
+  </div>
+</section>
+
+<section id="eiss">
+  <h2 class="section-title">EISS</h2>
+  <div class="intro">
+    <h3>Education & Information Support System</h3>
+    <p>
+      শিক্ষা ও তথ্য সহায়তার জন্য মাহাদী ফাউন্ডেশনের
+      পরিকল্পিত একটি উদ্যোগ।
+    </p>
+    <p class="notice">EISS সেবা চালুর প্রস্তুতি চলছে।</p>
+  </div>
+</section>
+
+<section id="ai">
+  <h2 class="section-title">Mahadi AI Assistant</h2>
+  <div class="intro">
+    <div class="symbol">🤖</div>
+    <h3>মাহাদী AI সহকারী</h3>
+    <p>
+      প্রযুক্তির মাধ্যমে শিক্ষা, তথ্য ও প্রয়োজনীয়
+      সহযোগিতা সহজ করার একটি পরিকল্পিত উদ্যোগ।
+    </p>
+    <p class="notice">AI Assistant-এর পূর্ণাঙ্গ সেবা এখনো চালু হয়নি।</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">যোগাযোগ</h2>
+  <div class="intro">
+    <p><strong>প্রতিষ্ঠান:</strong> মাহাদী ফাউন্ডেশন</p>
+    <p><strong>ইংরেজি নাম:</strong> Mahadi Foundation</p>
+    <p><strong>প্রস্তাবিত কার্যালয়:</strong>
+      দরগাহ পাড়া, বরইতলী, চকরিয়া, কক্সবাজার।
+    </p>
+    <p><strong>মূলমন্ত্র:</strong> মানবতার কল্যাণে, মানুষের পাশে।</p>
+    <p class="notice">
+      অফিসিয়াল ফোন নম্বর ও ইমেইল ঠিকানা পরবর্তীতে যুক্ত করা হবে।
+    </p>
+  </div>
+</section>
+
+<footer>
+  <h2>মাহাদী ফাউন্ডেশন</h2>
+  <p>MAHADI FOUNDATION</p>
+  <p>মানবতার কল্যাণে, মানুষের পাশে।</p>
+  <p class="footer-small">
+    © <span id="year">2026</span> Mahadi Foundation.
+    All Rights Reserved.
+  </p>
+  <p class="footer-small">
+    এই ওয়েবসাইটটি প্রতিষ্ঠানের অফিসিয়াল তথ্য প্রকাশের
+    জন্য তৈরি করা হচ্ছে।
+  </p>
+</footer>
+
+<a class="top" href="#home" aria-label="উপরে যান">↑</a>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+
+</body>
+</html>
